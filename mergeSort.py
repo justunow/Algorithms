@@ -36,4 +36,3 @@ def mergeSort(nums):
 
 nums = mergeSort(nums)
 print(nums)
-
