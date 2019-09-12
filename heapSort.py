@@ -6,16 +6,16 @@ for i in range(number):
 
 
 def heapify(nums, n, i):
-    largest = i
-    left = i * 2 + 1
-    right = i * 2 + 2
-    if left < n and nums[left] > nums[i]:
-        largest = left
-    if right < n and nums[right] > nums[largest]:
-        largest = right
-    if largest != i:
-        nums[largest], nums[i] = nums[i], nums[largest]
-        heapify(nums, n, largest)
+    la = i
+    l = i * 2 + 1
+    r = i * 2 + 2
+    if l < n and nums[l] > nums[i]:
+        la = l
+    if r < n and nums[r] > nums[la]:
+        la = r
+    if la != i:
+        nums[la], nums[i] = nums[i], nums[la]
+        heapify(nums, n, la)
 
 
 def heapSort(nums):
