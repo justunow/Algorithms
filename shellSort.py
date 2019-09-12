@@ -1,5 +1,5 @@
 nums = []
-number = int(input("Total elements of nums: "))
+number = int(input("Total number of elements: "))
 for i in range(number):
     value = int(input("%d element of list nums: " % i))
     nums.append(value)
