@@ -5,12 +5,16 @@ for i in range(number):
     nums.append(value)
 
 
-def bubbleSort(nums):
+def shortBubbleSort(nums):
     for i in range(len(nums) - 1, 0, -1):
+        flag = 1
         for j in range(i):
             if (nums[j] > nums[j + 1]):
                 nums[j], nums[j + 1] = nums[j + 1], nums[j]
+                flag = 0
+        if (flag == 1):
+            break
 
 
-bubbleSort(nums)
+shortBubbleSort(nums)
 print(nums)
